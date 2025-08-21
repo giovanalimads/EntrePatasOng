@@ -1,2 +1,37 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=DynaPuff:regular,500,600,700);
+
+/*PALETA DE CORES*/
+:root {
+    --brown: #876653;
+    --dark-green: #262721;
+    --light-brown: #D2C8BC;
+    --highligts: #FFDA45;
+    --button-adption: #FFD166;
+    --light-green: #4A4C41;
+    --light-gray: #F6F4F5;
+}
+
+/*CSS PADRÃO*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+html::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--destaque);
+    border-radius: 3px;
+}
+
