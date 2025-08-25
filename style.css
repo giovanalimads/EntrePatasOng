@@ -4,6 +4,7 @@
 /*PALETA DE CORES*/
 :root {
     --brown: #876653;
+    --medium-brown: #BD9076;
     --dark-green: #262721;
     --light-brown: #D2C8BC;
     --highligts: #FFDA45;
@@ -97,6 +98,8 @@ header {
 }
 
 .btn-header > button {
+    display: flex;
+    align-items: center;
     font-size: 18px;
     font-weight: 500;
     background-color: var(--dark-green);
@@ -117,13 +120,95 @@ header {
 .btn-header > button > span {
     font-size: 18px;
     margin-left: 10px;
-
 }
+
 
 /* SECTION - COMO FUNCIONA */
 #comoFunciona {
     background-color: var(--light-gray);
 }
+
+#comoFunciona > .titlePage > h3 {
+    color: var(--medium-brown);
+}
+
+#comoFunciona > .titlePage > h2 {
+    color: var(--brown);
+}
+
+.section-content {
+    text-align: center;
+}
+
+.list-card  {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-card > .item {
+    width: 340px;
+    text-align: center;
+    padding: 0 30px 0 30px;
+}
+
+.list-card > .item > .icon-item-content {
+    font-size: 40px;
+    color: var(--brown);
+}
+
+.list-card > .item > .item-title {
+    color: var(--brown);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0 10px 0;
+}
+
+.list-card > .item > .description {
+    color: var(--medium-brown);
+}
+
+.divider-paws > .divider {
+    width: 60px;
+}
+
+.btn-moreInfo {
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-moreInfo > button {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--highligts);
+    color: var(--dark-green);
+    margin: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.btn-moreInfo > button:hover {
+    /*arrumar cor*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .titlePage {
     color: var(--dark-green);
@@ -141,9 +226,40 @@ header {
 .titlePage > h2 {
     font-size: 30px;
 }
+
 /* SECTION - ANIMAIS */
 #animais {
     background-color: var(--light-brown);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.filtros > button {
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--brown);
+    color: var(--light-gray);
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.filtros > .filtro:hover {
+    background-color: var(--dark-green);
+    color: var(--light-gray);
+}
+
+.filtros > .filtro > span {
+    font-size: 18px;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 /*  SECTION - DEPOIMENTOS */
@@ -172,6 +288,7 @@ header {
 }
 
 .rua > p {
+    color: var(--dark-green);
     font-weight: 500;
     margin: 10px;
 }
