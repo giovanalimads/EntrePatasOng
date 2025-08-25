@@ -43,8 +43,6 @@ header {
     background-size: cover;
 }
 
-
-
 .header-top {
     display: flex;
     justify-content: space-between;
@@ -76,6 +74,30 @@ header {
 .navbar > ul > li > a:hover {
     color: var(--brown);
 }
+
+.btn-header > button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--dark-green);
+    color: var(--light-brown);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+} 
+
+.btn-header > button:hover {
+    background-color: var(--light-green);
+}
+
+.btn-header > button > span {
+    font-size: 18px;
+    margin-left: 10px;
+
+}
+
 /* SECTION - COMO FUNCIONA */
 
 /* SECTION - ANIMAIS */
