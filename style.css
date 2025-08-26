@@ -195,21 +195,6 @@ header {
     /*arrumar cor*/
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .titlePage {
     color: var(--dark-green);
     line-height: 25px;
@@ -266,6 +251,76 @@ header {
 #depoimentos {
     background-color: var(--light-gray);
 }
+
+#depoimentos > .titlePage > h3 {
+    color: var(--medium-brown);
+}
+
+#depoimentos > .titlePage > h2 {
+    color: var(--brown);
+}
+
+.slider-container  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.slider-wrapper {
+    overflow: hidden; /* esconde os outros cards */
+    max-width: 900px;
+    margin: 0 20px 0px; /* alterar depois */
+}
+
+.card-list {
+    display: flex;
+    gap: 20px;
+}
+
+.card-item {
+    background-color: var(--light-brown);
+    width: 280px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-item > img {
+    width: 250px;
+}
+
+.card-item > .depoiment {
+    font-size: 14px;
+    color: var(--dark-green);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  SECTION - SUPORTE */
 #suporte {
