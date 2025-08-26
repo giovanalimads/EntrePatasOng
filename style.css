@@ -250,6 +250,7 @@ header {
 /*  SECTION - DEPOIMENTOS */
 #depoimentos {
     background-color: var(--light-gray);
+    height: 90vh;
 }
 
 #depoimentos > .titlePage > h3 {
@@ -264,13 +265,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
 }
 
 .slider-wrapper {
     overflow: hidden; /* esconde os outros cards */
     max-width: 900px;
-    margin: 0 20px 0px; /* alterar depois */
 }
 
 .card-list {
@@ -298,20 +297,18 @@ header {
     color: var(--dark-green);
 }
 
+.slider-wrapper .swiper-pagination-bullet {
+    background: var(--highligts);
+}
 
+.slider-wrapper .swiper-slide-button {
+    color: var(--medium-brown);
+    transition: 0.3s ease;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.slider-wrapper .swiper-slide-button:hover {
+    color: var(--brown);
+}
 
 
 
