@@ -265,6 +265,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
 }
 
 .slider-wrapper {
@@ -297,13 +300,57 @@ header {
     color: var(--dark-green);
 }
 
-.slider-wrapper .swiper-pagination-bullet {
+.swiper-slide-button {
+    size: 2px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 30px;
+    height: 30px;
+    color: var(--medium-brown);
+    background-color: var(--light-brown); /* cor de fundo */
+    border-radius: 50%;
+    color: var(--brown); /* cor da seta */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Deixa as setas para fora do slider */
+.swiper-button-prev {
+    left: -30px; /* move para fora */
+}
+
+.swiper-button-next {
+    right: -15px;
+}
+
+/* Ajusta a seta dentro dos botões */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 16px; /* seta menor */
+}
+
+/* Hover com leve aumento e cor mais forte */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: var(--brown);
+    color: #fff; /* seta branca no hover */
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+/*.slider-wrapper .swiper-pagination-bullet {
     background: var(--highligts);
 }
 
 .slider-wrapper .swiper-slide-button {
     color: var(--medium-brown);
-    transition: 0.3s ease;
+    transition: 0.3s ease;;
 }
 
 .slider-wrapper .swiper-slide-button:hover {

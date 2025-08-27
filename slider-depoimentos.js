@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const swiper = new Swiper('.slider-wrapper', {
+    const swiper = new Swiper('.slider-container', {
         loop: true,
         grabCursor: true,
         spaceBetween: 20,
         pagination: {
-            l: '.swiper-pagination',
+            el: '.swiper-pagination',
             clickable: true,
             dynamicBullets: true,
         },
