@@ -394,11 +394,68 @@ header {
 
 /*  SECTION - CONTATO */
 #contato {
-    /*height: vh;*/
+    height: 100vh;
     background-image: url(assets/background_contact.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
+
+.contato-container {
+    width: 700px;
+    min-height: 70vh;
+    background-color: var(--light-gray);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.frm-contato {
+    max-width: 700px;
+    width: 100%;
+}
+
+.frm-contato > h2 {
+    text-align: center;
+}
+
+.frm-contato > .description {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    display: flex;
+    gap: 30px;
+}
+
+.lbl-nome,
+.lbl-sobrenome,
+.lbl-email,
+.lbl-message {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background-color: var(--light-brown);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 footer {
