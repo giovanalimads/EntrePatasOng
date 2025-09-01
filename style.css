@@ -416,19 +416,22 @@ header {
     width: 100%;
 }
 
-.frm-contato > h2 {
+.title-form {
     text-align: center;
 }
 
 .frm-contato > .description {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    font-size: 15px;
+    color: var(--light-green);
+}
+
+.form {
+    margin-top: 20px;
 }
 
 .line {
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
 }
 
 .lbl-nome,
@@ -444,11 +447,18 @@ input {
     border: none;
     border-radius: 5px;
     height: 30px;
+    margin-bottom: 10px;
 }
 
+.inp-sobrenome,
+.inp-nome {
+    width: 300px;
+}
 
-oi
-
+textarea {
+    background-color: var(--light-brown);
+    margin-bottom: 10px;
+}
 
 
 
